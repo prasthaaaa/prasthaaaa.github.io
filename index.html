@@ -2,25 +2,55 @@
 <head>
 <title> My Portfolio </title>
 </head>
+<! This is HTML comment-->
 <style>
-div {
-  width: 300px;
-  margin: auto;
-  background-color: #FFF4A3;
-}
-</style>
-<body style="text-align:center;background-color:MintCream;">
+body {text-align:center;background-color:MintCream;}
+.first {background-color:AliceBlue;}
+.second {background-color:white;color:red;}
 
-<h1 style=" background-color:AliceBlue;"> Greetings!<h1>
+span {background-color:Pink;font-family:Courier} 
+
+
+
+.city {
+  background-color: LavenderBlush;
+  color: black;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+</style>
+<body>
+<h1 class="first"> Greetings! </h1>
 <hr>
 
 <img src="https://img.freepik.com/premium-vector/cute-panda-waving-paw_42750-804.jpg?w=740" alt="a panda" width="250" height="300">
 
 <BR>
 
-<i> <span style="background-color:MintCream;font-family:Courier"> Prastha Khadgi</SPAN> </i>
+<h1> Prastha Khadgi</h1>
 
-<h2> <span style="background-color:white;color:red;">About Me </span> </h2>
+<span> <h2 class="second"> About Me </h2> </span>
 
 
 <div>
@@ -34,84 +64,128 @@ to grow and explore the world around me. </p>
 <hr>
 
 
-<h3> <span style="background-color:white;color:red;"> Address </span> </h3>
+<span> <h2 class="second"> Adress</h2> </span>
 
 
 
-<div style="background-color:#FFC0C7;">
+<div>
 <p> Nayabazar, Kathmandu </p>
 </div>
 <hr>
 
 
-<h3> <span style="background-color:white;color:red;"> Email </span> </h3>
-<div style="background-color:#D9EEE1;">
+<span> <h2 class="second">Email</h2> </span>
+
+<div">
 <a href=mailto:"prastha.a5576@gmail.com">Click Here</a>
 </div>
 <hr>
 
-<h3> <span style="background-color:white;color:red;"> Fav Movie </span> </h3>
+<span> <h2 class="second"> Fav Movie </h2> </span>
 
-
-<ul>
-
-
+<div class="row">
+  <div class="column">
+    
 	<img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
 	alt="Interstellar" width="150" height="200">
 	<li>Interstellar</li>
 
+</div>
+
+<div class="column">
 	<img src="https://m.media-amazon.com/images/M/MV5BZDdiZTAwYzAtMDI3Ni00OTRjLTkzN2UtMGE3MDMyZmU4NTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
 	alt="Before Sunrise" width="150" height="200">
 	<li>Before Sunrise</li>
+</div>
 
+<div class="column">
 	<img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p163182_p_v8_al.jpg"
 	alt="Bridge To Terebithia"width="150" height="200">
 	<li>Bridge To Terebithia</li>
+</div>
+
 
 </ul>
 <hr>
 
-<h3> <span style="background-color:white;color:red;"> Fav Games </span> </h3>
+<span> <h2 class="second"> Fav Games </h2> </span>
 
-<ol>
+
+<ul{text-align:center;}>
 		<li>Haunted Dorm</li>
-		<li>Town Ship</li>
+	<li>Town Ship</li>
 		<li>Among Us</li>
-</ol>
+</ul>
 <hr>
 
+<span> <h2 class="second"> Fav Youtube Channel </h2> </span>
 
-<h3> <span style="background-color:white;color:red;"> Fav Youtube Channel </span> </h3>
-<ul style="list-style-type:square;">
+<ul{text-align:center;}>
 <li> <a href="www.youtube.com/@HJEvelynha">Evelyn Ha</li> </a>
 <br>
 <li> <a href="www.youtube.com/@trikontales">Trikon Tales</li> </a>
 <br>
 <li> <a href="www.youtube.com/@TapeATale">Tape A Tale </li> </a>
+</ul>
 <br>
 <hr>
 <hr>
 
-<h3> <span style="background-color:white;color:red;">Some Places Of My Bucket List </span> </h3>
+<span> <h2 class="second"> Some Places Of My Bucket List  </h2> </span>
 
-<ul>
+
+<ul{text-align:center;}>
 <img src="https://res.klook.com/image/upload/c_fill,w_750,h_560/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/rog5yjqki6dgbhe9811q.jpg"
 alt="Bern" width="200" height="200">
 	<li>Bern,Switzerland</li>
 
+<div class="city">
+<h2>Switzerland</h2>
+<p>Bern, the capital city of Switzerland, is known for its picturesque old town, 
+characterized by medieval architecture and a charming atmosphere.</p>
+</div> 
+
+
+
 <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/09/cover-image-for-Maldives.jpg"
 alt= "maldives" width="200" height="200">
-	<li>Fulhadhoo,Maldives</li>
+	<li>Fulhadhoo,Maldives</li> 
+ 
+
+
+<div class="city">
+
+<h2>Fulhadhoo,Maldives</h2>
+<p>Fulhadhoo is a remote and idyllic island located in the Maldives,
+ known for its pristine beaches, crystal-clear turquoise waters, and abundant marine life</p>
+</div>
+
 
 <img src="https://d3iso9mq9tb10q.cloudfront.net/wysiwyg/Article-Images-2020/New-York/BBT-Night-Article-IMG-1-Ferry.jpg"
 alt="'NYC" width="200" height="200">
 	<li>NYC</li>
+
+<div class="city">
+<h2> NYC</h2>
+<p>New York City (NYC) is one of the most iconic and vibrant cities in the world, renowned for its rich cultural 
+diversity, towering skyscrapers and endless array of attractions..</p>
+</div>
 </ul>
 
 <hr>
 
-<i> <p style="font-size:160%;" > THANK YOU!! </p> </i>
+
+
+<iframe src="https://www.youtube.com/watch"" height="200" width="300" title="Youtube"></iframe>
 
 </body>
 </html>
 
+
+
+<i> <p style="font-size:160%;" > THANK YOU!! </p> </i>
+
+
+
+</body>
+</html>
